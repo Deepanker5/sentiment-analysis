@@ -1,0 +1,68 @@
+
+---
+
+## `.gitignore` (paste at project root)
+
+```gitignore
+# ---- Python / venv
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# ---- Jupyter / notebooks
+.ipynb_checkpoints/
+
+# ---- OS/editor cruft
+.DS_Store
+*.swp
+*.swo
+*.VSCodeCounter/
+.vscode/
+.idea/
+
+# ---- Logs & caches
+*.log
+logs/
+.cache/
+huggingface/
+datasets-cache/
+wandb/
+
+# ---- Artifacts & checkpoints
+artifacts/**/checkpoint-*/
+artifacts/**/*.pt
+artifacts/**/*.bin
+artifacts/**/*.safetensors
+artifacts/**/*.ckpt
+artifacts/**/*.pth
+artifacts/**/*.onnx
+
+# Keep result summaries & plots but ignore heavy weights by default
+!artifacts/**/results.json
+!artifacts/**/kimcnn_results.json
+!artifacts/**/bilstm_results.json
+!artifacts/**/summary.md
+!artifacts/**/*.png
+
+# ---- Data (keep folder, ignore raw files by default)
+data/*
+!data/.gitkeep
+# If you want to track the CSV, comment the line above and add:
+# !data/all-data.csv
+
+# ---- Reports (keep Markdown)
+reports/*.html
+reports/*.pdf
+# Keep README.md
+!reports/README.md
+
+# ---- Experiments (if you add configs later)
+experiments/*.log
+experiments/*.tmp

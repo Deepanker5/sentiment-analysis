@@ -1,0 +1,21 @@
+{
+  "test_macro_f1": 0.5627967572124574,
+  "report": "              precision    recall  f1-score   support\n\n    negative     0.7778    0.2308    0.3559        91\n     neutral     0.7320    0.9421    0.8239       432\n    positive     0.6138    0.4341    0.5086       205\n\n    accuracy                         0.7102       728\n   macro avg     0.7079    0.5357    0.5628       728\nweighted avg     0.7044    0.7102    0.6766       728\n",
+  "cm": [
+    [
+      21,
+      37,
+      33
+    ],
+    [
+      2,
+      407,
+      23
+    ],
+    [
+      4,
+      112,
+      89
+    ]
+  ]
+}
