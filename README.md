@@ -1,7 +1,7 @@
 # Sentiment Analysis on News Headlines  
 **CNN vs RNN vs Transformer (with Strong Linear Baselines)**
 
-> End-to-end comparison on `all-data.csv` using TF–IDF baselines, KimCNN, BiLSTM+Attention, and DistilBERT+LoRA. Trained on Apple Silicon (M1) with PyTorch MPS. This project was made after taking the Deep learning course exam to compare the results of each of the versions of the architectures taught in the course. 
+> End-to-end comparison on `all-data.csv` using TF–IDF baselines, KimCNN, BiLSTM+Attention, and DistilBERT+LoRA. Trained on Apple Silicon (M1) with PyTorch MPS. This project was made after taking the Deep learning course exam to compare the results of each of the versions of the architectures taught in the course. The dataset used for this project is sourced from [Kaggle Hub](https://www.kaggle.com/datasets/ankurzing/sentiment-analysis-for-financial-news).
 
 ---
 
