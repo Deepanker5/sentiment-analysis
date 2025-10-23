@@ -6,8 +6,7 @@
 ---
 
 ## 1) Project Structure
-
-.
+```
 ├─ data/
 │ └─ all-data.csv
 ├─ src/
@@ -29,6 +28,7 @@
 ├─ reports/
 │ └─ README.md # this report
 └─ requirements.txt
+```
 
 ---
 
@@ -119,6 +119,9 @@ Artifacts you can consult:
 - RNN: artifacts/rnn/bilstm_results.json, artifacts/rnn/bilstm_cm.png
 
 - Transformer:artifacts/transformer/results.json and artifacts/transformer/checkpoint-*
+
+---
+
 ## 7) Analysis
 ### 7.1 What worked best and why
 
@@ -166,6 +169,8 @@ Classical
 
 Tune TF–IDF (add character n-grams), and try Calibrated SVM if you need probabilities.
 
+---
+
 ## 8) Error Analysis
 What to inspect
 
@@ -179,6 +184,8 @@ Include 5–10 misclassified examples with gold label, predicted label, and a on
 
 If available, add token highlights via attention visualizations or LIME/SHAP for 2–3 examples.
 
+---
+
 ## 9) Limitations
 
 Dataset size is modest; results may not directly transfer to long-form news or other domains.
@@ -186,6 +193,8 @@ Dataset size is modest; results may not directly transfer to long-form news or o
 Limited hyperparameter search to keep training M1-friendly; deeper tuning likely lifts neural/transformer scores.
 
 Single stratified split reported; no k-fold averages (mean ± std) in this summary.
+
+---
 
 ## 10) Acknowledgments
 
